@@ -4,9 +4,15 @@ import Footer from './Footer';
 import Header from './Header';
 
 function App() {
+  let email = 'abc@gmail.com';
+  let phone = '95265485228';
+  let fullname = {
+    firstName: 'Hetkumar',
+    lastName: 'Prajapati'
+  }
   return (
     <div className="App">
-      <Header />
+      <Header email={email} phone={phone} name={fullname} />
       {/* <div className='container'>
         <h1 className='text-danger'>Welcome to Page</h1>
       </div> */}
