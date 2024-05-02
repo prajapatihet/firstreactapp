@@ -17,8 +17,9 @@ function App() {
   return (
     <div className="App">
       <Header email={email} phone={phone} name={fullname}>
-        <h1>Welcome to my Portfolio!</h1>
+        <h3>Welcome to my Portfolio!</h3>
         <FontAwesomeIcon icon={faWhatsapp} />
+        <p>Extra Spaces</p>
         <FontAwesomeIcon icon={faPhone} className='text-danger' />
       </Header>
       {/* <div className='container'>
@@ -92,7 +93,7 @@ function App() {
           </Row>
         </Container>
       </Container> */}
-      <Container>
+      {/* <Container>
         <Row>
           {blog.map((v, i) => {
             return (
@@ -100,7 +101,7 @@ function App() {
             )
           })}
         </Row>
-      </Container>
+      </Container> */}
 
       <Footer />
     </div>

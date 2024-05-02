@@ -4,8 +4,9 @@ export default function Header({ email, phone, name, children }) {// here instea
     // let { name } = props; //destructuring assignment to get the header info object from props 
     return (
         <div>
-            <h1>Header: {email} | {phone} Name: {name.firstName}, {name.lastName}</h1>
-            <h1>Header: {name.firstName}, {name.lastName}</h1>
+            {/* <h1>Header: {email} | {phone} Name: {name.firstName}, {name.lastName}</h1> */}
+            {/* <h1>Header: {name.firstName}, {name.lastName}</h1> */}
+            <h1>Header</h1>
             {children}
         </div>
     )
