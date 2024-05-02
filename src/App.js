@@ -2,6 +2,7 @@ import { Col, Container, Row, Card, Button } from 'react-bootstrap';
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
+import { blog } from './Data/blog';
 
 function App() {
   let email = 'abc@gmail.com';
@@ -27,7 +28,7 @@ function App() {
         <Card />
         <Card />
       </div> */}
-      <Container fluid>
+      {/* <Container fluid>
         <Container>
           <Row>
             <Col className='col-12 text-center py-4'>
@@ -85,6 +86,15 @@ function App() {
             </Col>
           </Row>
         </Container>
+      </Container> */}
+      <Container>
+        <Row>
+          {blog.map((v, i) => {
+            return (
+              <ProductItem pitems={v} key={i} />
+            )
+          })}
+        </Row>
       </Container>
 
       <Footer />
@@ -99,3 +109,19 @@ export default App;
 //     <div className='cardItems'>Card div</div>
 //   )
 // }
+
+function ProductItem({ pitems }) {
+  return (
+    <div className='col-lg-3 mb-4'>
+      <Card >
+        <Card.Body>
+          <Card.Title>{pitems.title}</Card.Title>
+          <Card.Text>
+            {pitems.body}
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+    </div>
+  );
+}
