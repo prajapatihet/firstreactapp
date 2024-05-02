@@ -6,15 +6,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className='row'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div className='container'>
+        <h1 className='text-danger'>Welcome to Page</h1>
       </div>
+      {/* <div className='row'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div> */}
       <Footer />
     </div>
   );
