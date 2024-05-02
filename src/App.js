@@ -6,9 +6,24 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className='row'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+function Card() {
+  return (
+    <div className='cardItems'>Card div</div>
+  )
+}

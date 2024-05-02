@@ -32,7 +32,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.row {
+  width: 1320px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cardItems {
+  flex-basis: 20%;
+  margin: 1%;
+  height: 200px;
+  background-color: aqua;
 }
