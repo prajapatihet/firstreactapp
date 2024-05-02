@@ -12,7 +12,9 @@ function App() {
   }
   return (
     <div className="App">
-      <Header email={email} phone={phone} name={fullname} />
+      <Header email={email} phone={phone} name={fullname}>
+        <h1>Welcome to my Portfolio!</h1>
+      </Header>
       {/* <div className='container'>
         <h1 className='text-danger'>Welcome to Page</h1>
       </div> */}
