@@ -3,6 +3,9 @@ import './App.css';
 import Footer from './Footer';
 import Header from './Header';
 import { blog } from './Data/blog';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   let email = 'abc@gmail.com';
@@ -15,6 +18,8 @@ function App() {
     <div className="App">
       <Header email={email} phone={phone} name={fullname}>
         <h1>Welcome to my Portfolio!</h1>
+        <FontAwesomeIcon icon={faWhatsapp} />
+        <FontAwesomeIcon icon={faPhone} className='text-danger' />
       </Header>
       {/* <div className='container'>
         <h1 className='text-danger'>Welcome to Page</h1>
