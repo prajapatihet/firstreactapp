@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       <Header email={email} phone={phone} name={fullname}>
         <h3>Welcome to my Portfolio!</h3>
-        <FontAwesomeIcon icon={faWhatsapp} />
+        {/* <FontAwesomeIcon icon={faWhatsapp} />
         <p>Extra Spaces</p>
-        <FontAwesomeIcon icon={faPhone} className='text-danger' />
+        <FontAwesomeIcon icon={faPhone} className='text-danger' /> */}
       </Header>
       {/* <div className='container'>
         <h1 className='text-danger'>Welcome to Page</h1>
@@ -116,18 +116,18 @@ export default App;
 //   )
 // }
 
-function ProductItem({ pitems }) {
-  return (
-    <div className='col-lg-3 mb-4'>
-      <Card >
-        <Card.Body>
-          <Card.Title>{pitems.title}</Card.Title>
-          <Card.Text>
-            {pitems.body}
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    </div>
-  );
-}
+// function ProductItem({ pitems }) {
+//   return (
+//     <div className='col-lg-3 mb-4'>
+//       <Card >
+//         <Card.Body>
+//           <Card.Title>{pitems.title}</Card.Title>
+//           <Card.Text>
+//             {pitems.body}
+//           </Card.Text>
+//           <Button variant="primary">Go somewhere</Button>
+//         </Card.Body>
+//       </Card>
+//     </div>
+//   );
+// }
